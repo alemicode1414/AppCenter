@@ -30,7 +30,7 @@ class MainActivity : ComponentActivity() {
             AppCenterTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(
-                        name = "This is our next plan",
+                        name = "This is our data",
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
@@ -41,6 +41,10 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
+    Text(
+        text = "Hello $name!",
+        modifier = modifier
+    )
     Text(
         text = "Hello $name!",
         modifier = modifier
